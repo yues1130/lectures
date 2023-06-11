@@ -1,7 +1,7 @@
 import matplotlib as mpl
-import matplotlib.pyplot as plt
-import matplotlib.gridspec as gridspec
-import matplotlib.ticker as ticker
+import mpl.pyplot as plt
+import mpl.gridspec as gridspec
+import mpl.ticker as ticker
 
 #rcParams_default = mpl.rcParamsDefault
 rcParams_default = { # dpi only
@@ -51,6 +51,6 @@ rcParams_nat = {
     }
 
 #import matplotlib as mpl
-mpl.rcParams.update(rcParams_default)
+#mpl.rcParams.update(rcParams_default)
 #mpl.rcParams.update(rcParams_nat)
 

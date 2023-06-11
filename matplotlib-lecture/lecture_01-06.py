@@ -79,6 +79,28 @@ plt.plot(x,y, ls=ls, lw = lw, alpha=a,
 plt.savefig('test.eps', format='eps')
 plt.show()
 
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.linspace(1,10,10)
+y = np.linspace(1,10,10)
+
+params = {
+    # line
+     'linestyle'         : '-' # style of line
+    ,'linewidth'         : 1
+    ,'color'             : 'C0'
+    # marker
+    ,'marker'            : 'o'
+    ,'markersize'        : 7.5
+    ,'markerfacecolor'   : 'C0'
+    ,'markeredgecolor'   : 'k'
+    ,'markeredgewidth'   : 0.5
+    ,'alpha'             : 1
+}
+fig = plt.figure(dpi=600)
+ax = plt.gca()
+ax.plot(x, y, **params)
+plt.show()
 
 
 # 2. Error bar
@@ -217,17 +239,4 @@ plt.show()
 
 # spine formats (frame box): ax.spines
 # axis formats: ax.xaxis, ax.yaxis
-
-
-
-
-
-
-
-
-
-
-
-
-
 

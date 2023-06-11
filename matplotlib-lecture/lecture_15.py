@@ -15,7 +15,7 @@
 # almost same as pcolor and usually preferred (faster)
 
 # 3) imshow()
-# regular grid and supports interpolation option\
+# regular grid and supports interpolation option
 
 
 
